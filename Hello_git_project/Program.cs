@@ -10,9 +10,16 @@ namespace Hello_git_project
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello 13T!");
-            Console.WriteLine("Nem az első github repom.");
-            Console.ReadKey();
+            List<int> list = new List<int>();
+            Console.WriteLine("Kérem adjon meg 10 számot: !");
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine((i+1) + ". szám: ");
+                int a = int.Parse(Console.ReadLine());
+                list.Add(a);
+            }
+            Console.WriteLine("A legnagyobb a " + list.Max());
+            Console.ReadLine();
         }
     }
 }
