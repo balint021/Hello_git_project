@@ -12,16 +12,27 @@ namespace Hello_git_project
         {
             List<int> list = new List<int>();
             Console.WriteLine("Kérem adja meg hány elemet akar bekerni: ");
-            int darab = int.Parse(Console.ReadLine());
-            for (int i = 0; i < darab; i++)
+            try
             {
-                Console.WriteLine((i+1) + ". szám: ");
-                int a = int.Parse(Console.ReadLine());
-                list.Add(a);
+                int darab = int.Parse(Console.ReadLine());
+
+                for (int i = 0; i < darab; i++)
+                {
+                    Console.WriteLine((i + 1) + ". szám: ");
+                    int a = int.Parse(Console.ReadLine());
+                    list.Add(a);
+                }
+                Console.WriteLine("A legnagyobb a " + list.Max());
+                Console.WriteLine("A legkisebb a " + list.Min());
+                Console.ReadLine();
             }
-            Console.WriteLine("A legnagyobb a " + list.Max());
-            Console.WriteLine("A legkisebb a " + list.Min());
-            Console.ReadLine();
+            catch (FormatException)
+            {
+                Console.WriteLine("Ez nem szám!");
+                Console.ReadLine();
+            }
+            
+            
         }
     }
 }
