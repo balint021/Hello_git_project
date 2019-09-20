@@ -11,8 +11,9 @@ namespace Hello_git_project
         static void Main(string[] args)
         {
             List<int> list = new List<int>();
-            Console.WriteLine("Kérem adjon meg 10 számot: !");
-            for (int i = 0; i < 10; i++)
+            Console.WriteLine("Kérem adja meg hány elemet akar bekerni: ");
+            int darab = int.Parse(Console.ReadLine());
+            for (int i = 0; i < darab; i++)
             {
                 Console.WriteLine((i+1) + ". szám: ");
                 int a = int.Parse(Console.ReadLine());
