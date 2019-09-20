@@ -10,7 +10,7 @@ namespace Hello_git_project
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Console.WriteLine("Hello 13T!");
             Console.WriteLine("Nem az első github repom.");
             Console.ReadKey();
         }
