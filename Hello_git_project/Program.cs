@@ -20,6 +20,7 @@ namespace Hello_git_project
                 list.Add(a);
             }
             Console.WriteLine("A legnagyobb a " + list.Max());
+            Console.WriteLine("A legkisebb a " + list.Min());
             Console.ReadLine();
         }
     }
